@@ -1,2 +1,2 @@
 #!/bin/bash
-num-dir="${PATH[@]}"
+echo $((`echo $PATH | grip -o ":/" | wc -| `+ 1))
